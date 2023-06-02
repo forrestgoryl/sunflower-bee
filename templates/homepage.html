@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sunflower Bee</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <link rel="stylesheet" href="static/styles/homepage.css">
+</head>
+<body>
+    <div id="main-content__top" class="star-animation main-content__style">
+        <h1 class="text">Welcome to Sunflower Bee!</h1>
+        <h2 class="text">The bee that sees whether there's a sunflower in your picture!</h2>
+        <form class="drop-zone-form" action="/detect-sunflower" method="post" enctype="multipart/form-data">
+            <div class="drop-zone">
+                <span class="drop-zone__prompt text">Drop file here or click to upload</span>
+                <input class="drop-zone__input" type="file" name="drop-zone__input">
+            </div>
+            <button class="button-style text" type="submit">Show images to the bee</button>
+        </form>
+    </div>
+    {% if seen_images != [] %}
+    <div id="main-content__bottom" class="star-animation main-content__style">
+        {% for img in seen_images %}
+        <div class="seen-image {{ img.result }}__parent">
+            <img class="{{ img.result }}" src="data:image/jpg;base64,{{ img.img_data }}">
+        </div>
+        {% endfor %}
+    </div>
+    <form id="footer" action="/delete-session" method="post">
+        <button class="button-style text" type="submit">Clear session</button>
+    </form>
+    {% endif %}
+    <script src="static/scripts/dropzone.js" type="text/javascript"></script>
+</body>
+<!-- Attribution for div#detect-container background image: -->
+<!-- https://www.vecteezy.com/vector-art/570568-colorful-stars-on-black-background-pattern -->
+<!-- Artist username: designtoonsy -->
+</html>
