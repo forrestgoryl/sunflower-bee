@@ -1,13 +1,11 @@
 <!-- Title -->
-# Sunflower Bee! A web application housing an image detection engine.
+# Sunflower Bee!
+## A web application housing an image detection engine.
 
 <!-- Intro -->
-### Have you ever wondered if your picture had a sunflower in it? Well, look no further! This
-### web application can tell you!
+### Have you ever wondered if your picture had a sunflower in it? Well, look no further! This web application can tell you!
 
-### Sunflower Bee is a flask-based web application that accepts pictures and then detects whether
-### that picture had a sunflower in it or not. This project was meant as a practice project to teach
-### myself about neural networks.
+### Sunflower Bee is a flask-based web application that accepts pictures and then detects whether that picture had a sunflower in it or not. It then shows the picture and the result of the detection to the user.
 
 <!-- Video -->
 Video walkthrough of the project coming soon!
