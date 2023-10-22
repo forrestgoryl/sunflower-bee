@@ -15,7 +15,7 @@ Video walkthrough of the project coming soon!
 1. Download the zip file from the user interface at https://github.com/forrestgoryl/sunflower-bee, 
 or run `git clone 'https://github.com/forrestgoryl/sunflower-bee.git'` to clone into this repository.
 
-2. Create a virtual environment using the command `virtualenv myenv`.
+2. Run  `cd sunflower-bee` to move to the project folder and then create a virtual environment using the command `virtualenv myenv`.
 You may replace myenv with an appropriate name, such as sunflower_bee_env-py3.9.
 
 3. Download dependencies to your new virtualenv using the command `pip install -r requirements.txt`.
