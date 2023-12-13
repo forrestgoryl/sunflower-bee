@@ -8,7 +8,7 @@
 ### Sunflower Bee is a flask-based web application that accepts pictures and then detects whether that picture had a sunflower in it or not. It then shows the picture and the result of the detection to the user.
 
 <!-- Video -->
-Video walkthrough of the project coming soon!
+[Video walkthrough](https://youtu.be/5IHK1NtDgas)
 
 <!-- Installation Instructions -->
 0. Make sure to have `pip` (and optionally, `git`) correctly downloaded and up-to-date. These instructions are given with the assumption that [Git Bash](https://www.geeksforgeeks.org/working-on-git-bash/) is being used as the command terminal.
